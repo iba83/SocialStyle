@@ -1,0 +1,216 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.wrapper {
+  background-color: #164a84;
+  height: 100%;
+  padding: 30px 240px;
+}
+
+.wrapper .header {
+  height: 670px;
+  width: 100%;
+  position: relative;
+}
+
+.wrapper .header .title {
+  color: white;
+  font-size: 100px;
+  padding-bottom: 10px;
+  margin: 0 auto;
+  width: 800px;
+  font-family: "arial black";
+  -webkit-filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.6));
+}
+
+.wrapper .header .title .span1 {
+  color: #f6ad49;
+}
+
+.wrapper .header .publics {
+  width: 100%;
+  padding: 0 120px;
+  position: absolute;
+  z-index: 1;
+  top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  position: relative;
+}
+
+.wrapper .header .publics .pic {
+  height: 230px;
+  -webkit-filter: drop-shadow(1px 3px 1px #2c4f54);
+          filter: drop-shadow(1px 3px 1px #2c4f54);
+}
+
+.wrapper .header .circle {
+  background-color: #008899;
+  height: 100px;
+  width: 100%;
+  border-radius: 50%;
+  position: absolute;
+  top: 490px;
+  -webkit-filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.6));
+}
+
+.wrapper .main {
+  font-size: 24px;
+  font-family: "Hiragino Sans","ヒラギノ角ゴシック";
+  font-weight: 400;
+}
+
+.wrapper .main .item {
+  border: 5px solid #008899;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px 60px;
+  margin-bottom: 25px;
+  -webkit-filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.6));
+}
+
+.wrapper .main .item .q {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.wrapper .main .item .choice {
+  font-size: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  position: relative;
+}
+
+.wrapper .main .item .choice .input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  padding-left: 40px;
+}
+
+.wrapper .main .item .choice .input .radiobtn {
+  position: absolute;
+  top: 7px;
+  left: 10px;
+}
+
+.wrapper .main .item .choice .choice2 {
+  position: absolute;
+  left: 400px;
+}
+
+.wrapper .main .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .main .btn .submit {
+  font-family: "arial black";
+  border: 1px solid #f6ad49;
+  background-color: #f6ad49;
+  border-radius: 5px;
+  padding: 10px 200px;
+  font-size: 30px;
+  color: white;
+  outline: none;
+  margin: 50px 0;
+  -webkit-filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.6));
+}
+
+.wrapper .main .btn .submit:active {
+  -webkit-filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+          filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+  position: relative;
+  top: 10px;
+}
+
+.wrapper .result {
+  border: 5px solid #008899;
+  background-color: white;
+  border-radius: 20px;
+  padding: 40px 70px;
+  font-family: "Hiragino Sans","ヒラギノ角ゴシック";
+  font-weight: 400;
+  -webkit-filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.6));
+}
+
+.wrapper .result .resultpic {
+  height: 280px;
+  display: block;
+  margin: 30px auto;
+}
+
+.wrapper .result .top {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+}
+
+.wrapper .result .top .typeName {
+  color: #e2041b;
+  font-size: 55px;
+}
+
+.wrapper .result .trend {
+  font-size: 25px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.wrapper .result .introduction {
+  font-size: 20px;
+}
+
+.wrapper .result .character {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 20px;
+  padding-top: 30px;
+}
+
+.wrapper .result .character .action {
+  border: 5px solid #008899;
+  border-radius: 10px;
+  width: 50%;
+  padding: 15px;
+}
+
+.wrapper .result .character .action .actionItem {
+  font-size: 24px;
+  text-align: center;
+  font-weight: 700;
+  padding-bottom: 15px;
+}
+
+.wrapper .result .character .action2 {
+  margin-left: 20px;
+}
+
+.wrapper .footer {
+  height: 80px;
+}
+/*# sourceMappingURL=main.css.map */

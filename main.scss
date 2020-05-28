@@ -1,0 +1,161 @@
+*{
+  box-sizing: border-box;
+}
+.wrapper {
+  background-color: #164a84;
+  height: 100%;
+  padding: 30px 240px;
+  .header {
+    height: 670px;
+    width: 100%;
+    position: relative;
+    .title {
+      color: white;
+      font-size: 100px;
+      padding-bottom: 10px;
+      margin: 0 auto;
+      width: 800px;
+      font-family: "arial black";
+      filter: drop-shadow(10px 10px 10px rgba(0,0,0,0.6));
+      .span1 {
+        color: #f6ad49;
+      }  
+    }
+    .publics{
+      width: 100%;
+      padding: 0 120px;
+      position: absolute;
+      z-index: 1;
+      top: 30px;
+      display: flex;
+      justify-content: space-around;
+      position: relative;
+      .pic {
+        height: 230px;
+        filter: drop-shadow(1px 3px 1px rgba(44,79,84,1));
+      }
+    }
+    .circle {
+      background-color: #008899;
+      height: 100px;
+      width: 100%;
+      border-radius: 50%;
+      position: absolute;
+      top: 490px;
+      filter: drop-shadow(5px 5px 8px rgba(0,0,0,0.6));
+    }
+  }
+  .main {
+    font-size: 24px;
+    font-family: "Hiragino Sans","ヒラギノ角ゴシック";
+    font-weight: 400;
+    .item {
+      border: 5px solid #008899;
+      background-color: white;
+      border-radius: 20px;
+      padding: 40px 60px;
+      margin-bottom: 25px;
+      filter: drop-shadow(4px 4px 7px rgba(0,0,0,0.6));
+      .q {
+        display: block;
+        padding-bottom: 10px;
+      }
+      .choice {
+        font-size: 22px;
+        display: flex;
+        justify-content: left;
+        position: relative;
+        .input { 
+          display: flex;
+          position: relative;
+          padding-left: 40px;
+          .radiobtn {
+            position: absolute;
+            top: 7px;
+            left: 10px;
+          }
+        }
+        .choice2 {
+          position: absolute;
+          left: 400px;
+        }
+      }
+    }
+    .btn {
+      display: flex;
+      justify-content: center;
+      .submit {
+        font-family: "arial black";
+        border: 1px solid #f6ad49;
+        background-color: #f6ad49;
+        border-radius: 5px;
+        padding: 10px 200px;
+        font-size: 30px;
+        color: white;
+        outline: none;
+        margin: 50px 0;
+        filter: drop-shadow(4px 4px 7px rgba(0,0,0,0.6));
+      }
+      .submit:active {
+        filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.0));
+        position: relative;
+        top: 10px;
+      }
+    }
+  }
+  .result {
+    border: 5px solid #008899;
+    background-color: white;
+    border-radius: 20px;
+    padding: 40px 70px;
+    font-family: "Hiragino Sans","ヒラギノ角ゴシック";
+    font-weight: 400;
+    filter: drop-shadow(4px 4px 7px rgba(0,0,0,0.6));
+    .resultpic {
+      height: 280px;
+      display: block;
+      margin: 30px auto;
+    }
+    .top {
+      text-align: center;
+      font-weight: 700;
+      font-size: 40px;
+      .typeName {
+        color: #e2041b;
+        font-size: 55px;
+      }
+    }
+    .trend {
+      font-size: 25px;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .introduction {
+      font-size: 20px;
+    }
+    .character {
+      display: flex;
+      justify-content: space-between;
+      font-size: 20px;
+      padding-top: 30px;
+      .action {
+        border: 5px solid #008899;
+        border-radius: 10px;
+        width: 50%;
+        padding: 15px;
+        .actionItem {
+          font-size: 24px;
+          text-align: center;
+          font-weight: 700;
+          padding-bottom: 15px;
+        }
+      }
+      .action2 {
+        margin-left: 20px;
+      }
+    }
+  }
+  .footer {
+    height: 80px;
+  }
+}
