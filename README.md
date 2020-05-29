@@ -23,7 +23,8 @@ animateメソッドを使用し、アプリを開いた瞬間にイラストを�
 - javascript
 
 ## 今後の実装したい機能
-- Twitter投稿機能
+- ~~Twitter投稿機能~~
+- 別の診断ページ実装
 
 [![Image from Gyazo](https://i.gyazo.com/b09c93c7924e03253d9b23b94e65d95a.gif)](https://gyazo.com/b09c93c7924e03253d9b23b94e65d95a)
 <a href="https://gyazo.com/318ea5d029514a29c259e097529c267b"><img src="https://i.gyazo.com/318ea5d029514a29c259e097529c267b.png" alt="Image from Gyazo" width="1440"/></a>
