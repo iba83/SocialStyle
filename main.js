@@ -151,8 +151,24 @@ $(function(){
   var btn = `
   <div class = "again">
   <button class = "againbtn">もう一回</button>
+  <a href="" class ="againbtn sharebtn ml-3"><i class="fab fa-twitter"></i>  Twitterでシェアする</a>
 </div>
-  `
+`
+
+  var url = location.href;
+  var drashare = `あなたはドライビングタイプ。（自己主張 : 強 / 感情表現 : 弱）`
+  var exshare = `あなたはエクスプレッシブタイプ。（自己主張 : 強 / 感情表現 : 強）`
+  var anashare = `あなたはアナリティカルタイプ。（自己主張 : 弱 / 感情表現 : 弱）`
+  var emishare = `あなたはエミアブルタイプ。（自己主張 : 弱 / 感情表現 : 強）`
+
+  var dratext = encodeURIComponent(drashare);
+  var extext = encodeURIComponent(exshare);
+  var anatext = encodeURIComponent(anashare);
+  var emitext = encodeURIComponent(emishare);
+  var draurl = 'http://twitter.com/share?url=' + url + '&text=' + dratext;
+  var exurl = 'http://twitter.com/share?url=' + url + '&text=' + extext;
+  var anaurl = 'http://twitter.com/share?url=' + url + '&text=' + anatext;
+  var emiurl = 'http://twitter.com/share?url=' + url + '&text=' + emitext;
 
   $(".publics").animate({
     "top":"-100px"
@@ -177,15 +193,19 @@ $(function(){
       if (a>=5 && d>=5){
         $(".main").append(draHtml);
         $(".main").after(btn);
+        $(".sharebtn").attr("href", draurl);
       } else if (a>=5 && c>=5){
         $(".main").append(exHtml);
         $(".main").after(btn);
+        $(".sharebtn").attr("href", exurl);
       } else if (b>=5 && d>=5){
         $(".main").append(anaHtml);
         $(".main").after(btn);
+        $(".sharebtn").attr("href", anaurl);
       } else if (b>=5 && c>=5){
         $(".main").append(emiHtml);
         $(".main").after(btn);
+        $(".sharebtn").attr("href", emiurl);
       }
     }
 

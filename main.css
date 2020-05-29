@@ -211,27 +211,36 @@
 }
 
 .wrapper .again {
-  padding: 75px 200px;
+  padding: 75px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: "Hiragino Sans","ヒラギノ角ゴシック", "arial black";
+  font-weight: 400;
 }
 
 .wrapper .again .againbtn {
-  width: 100%;
-  font-family: "Hiragino Sans","ヒラギノ角ゴシック";
-  font-weight: 400;
-  border: 1px solid black;
+  width: 50%;
+  border: 1px solid white;
   background-color: white;
   border-radius: 5px;
-  padding: 10px 200px;
   font-size: 25px;
   outline: none;
+  padding: 10px;
   -webkit-filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.6));
           filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.6));
+}
+
+.wrapper .again .sharebtn {
+  margin-left: 20px;
+  background-color: #0095d9;
+  border: 1px solid #0095d9;
+  color: white;
+  text-decoration: none;
+  text-align: center;
 }
 
 .wrapper .again .againbtn:active {

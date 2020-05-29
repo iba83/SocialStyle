@@ -156,20 +156,28 @@
     }
   }
   .again {
-    padding: 75px 200px;
+    padding: 75px 0;
     display: flex;
     justify-content: center;
+    font-family: "Hiragino Sans","ヒラギノ角ゴシック", "arial black";
+    font-weight: 400;
     .againbtn {
-      width: 100%;
-      font-family: "Hiragino Sans","ヒラギノ角ゴシック";
-      font-weight: 400;
-      border: 1px solid black;
+      width: 50%;
+      border: 1px solid white;
       background-color: white;
       border-radius: 5px;
-      padding: 10px 200px;
       font-size: 25px;
       outline: none;
+      padding: 10px;
       filter: drop-shadow(4px 4px 7px rgba(0,0,0,0.6));
+    }
+    .sharebtn {
+      margin-left: 20px;
+      background-color: #0095d9;
+      border: 1px solid #0095d9;
+      color: white;
+      text-decoration: none;
+      text-align: center;
     }
     .againbtn:active {
       filter: drop-shadow(0px 0px 0px rgba(0,0,0,0.0));
