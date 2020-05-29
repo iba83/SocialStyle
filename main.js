@@ -22,7 +22,7 @@ $(function(){
         <li>・困難を引き受ける</li>
         <li>・意思決定は事実を比較して考え素早い</li>
         <li>・費用対効果を重要視する</li>
-        <li>・チームをコントローする</li>
+        <li>・チームをコントロールする</li>
       </ul>
     </div>
     <div class="action action2">
@@ -148,6 +148,11 @@ $(function(){
   </div>
 </div>
   `
+  var btn = `
+  <div class = "again">
+  <button class = "againbtn">もう一回</button>
+</div>
+  `
 
   $(".publics").animate({
     "top":"-100px"
@@ -159,6 +164,7 @@ $(function(){
   $(".submit").on("click", function(){
 
     $(".result").remove();
+    $(".again").remove();
 
     var a = $(".typeA:checked").length
     var b = $(".typeB:checked").length
@@ -170,16 +176,27 @@ $(function(){
     }else{
       if (a>=5 && d>=5){
         $(".main").append(draHtml);
+        $(".main").after(btn);
       } else if (a>=5 && c>=5){
         $(".main").append(exHtml);
+        $(".main").after(btn);
       } else if (b>=5 && d>=5){
         $(".main").append(anaHtml);
+        $(".main").after(btn);
       } else if (b>=5 && c>=5){
         $(".main").append(emiHtml);
+        $(".main").after(btn);
       }
     }
 
-    $(window).scrollTop(4350);
+    $(window).scrollTop(4375);
+
+    $(".againbtn").on("click", function(){
+      $(".result").remove();
+      $(".again").remove();
+      $(".radiobtn").prop('checked', false);
+      $(window).scrollTop(0);
+    })
 
   })
 });

@@ -131,7 +131,7 @@
   font-size: 30px;
   color: white;
   outline: none;
-  margin: 50px 0;
+  margin: 50px 0 75px;
   -webkit-filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.6));
           filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.6));
 }
@@ -208,6 +208,37 @@
 
 .wrapper .result .character .action2 {
   margin-left: 20px;
+}
+
+.wrapper .again {
+  padding: 75px 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper .again .againbtn {
+  width: 100%;
+  font-family: "Hiragino Sans","ヒラギノ角ゴシック";
+  font-weight: 400;
+  border: 1px solid black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 10px 200px;
+  font-size: 25px;
+  outline: none;
+  -webkit-filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.6));
+          filter: drop-shadow(4px 4px 7px rgba(0, 0, 0, 0.6));
+}
+
+.wrapper .again .againbtn:active {
+  -webkit-filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+          filter: drop-shadow(0px 0px 0px rgba(0, 0, 0, 0));
+  position: relative;
+  top: 10px;
 }
 
 .wrapper .footer {
