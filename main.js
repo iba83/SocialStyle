@@ -178,5 +178,8 @@ $(function(){
         $(".main").append(emiHtml);
       }
     }
+
+    $(window).scrollTop(4350);
+
   })
 });
